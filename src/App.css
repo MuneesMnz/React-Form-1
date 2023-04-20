@@ -1,38 +1,31 @@
 .App {
-  text-align: center;
+  background: url("https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-virtual-background-_Tcjok-d9b4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.abc {
+  border: 1px solid gray;
+  padding: 10px;
+  outline: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.labeltext {
+  color: rgb(105, 101, 101);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error {
+  color: rgb(153, 14, 14);
+  padding: 5px;
+  font-size: 14px;
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input:invalid[focused="true"] ~ .error {
+  display: block;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:invalid[focused="true"]{
+  border: 1px solid rgb(156, 12, 12);
 }
